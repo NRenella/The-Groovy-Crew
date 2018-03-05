@@ -64,7 +64,10 @@ public class CornerCamper extends Robot
 	 * onScannedRobot:  Fire!
 	 */
 	public void onScannedRobot(ScannedRobotEvent e) {
-		fire(2);
+		if(e.getDistance() < 100)
+		   fire(Rules.MAX_BULLET_POWER);
+		else
+		   fire(1);
 		
 	}
 }
