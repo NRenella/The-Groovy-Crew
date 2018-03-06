@@ -12,7 +12,14 @@ public class CornerCamper extends Robot
 
 
 	public void run() {
-
+	
+	        // Set out colors
+		setBodyColor(Color.white);
+		setGunColor(Color.black);
+		setRadarColor(Color.black);
+		setBulletColor(Color.white);
+		setScanColor(Color.green);
+		
 		// Initialize wallDistance to the maximum possible for this battlefield.
 		wallDistance = Math.max(getBattleFieldWidth(), getBattleFieldHeight()); 
 		
